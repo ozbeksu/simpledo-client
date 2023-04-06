@@ -1,0 +1,15 @@
+.alert {
+  padding: 0.75rem;
+  margin: 1rem 0 0;
+  &.default {
+    background-color: var(--color-bg-gray);
+  }
+  &.success {
+    color: var(--color-succes);
+    background-color: rgba(var(--color-succes-rgba), 0.2);
+  }
+  &.error {
+    color: var(--color-error);
+    background-color: rgba(var(--color-error-rgba), 0.2);
+  }
+}

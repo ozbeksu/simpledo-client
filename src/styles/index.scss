@@ -1,0 +1,35 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+@import "flex";
+@import "spacing";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: MarkPro, sans-serif;
+  color: var(--dark-blue-grey);
+  background-color: var(--color-bg-gray);
+}
+
+.box {
+  padding: 2rem;
+  width: 440px;
+  min-height: 437px;
+  height: 100%;
+}
+
+.box-radius {
+  border-radius: 0.5rem;
+}
+
+.bg-shadow {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.bg-white {
+  background: var(--color-white);
+}

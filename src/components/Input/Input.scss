@@ -1,0 +1,19 @@
+.input {
+  width: 100%;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px var(--color-disabled);
+  background-color: var(--color-white);
+
+  &:focus-visible {
+    outline: none;
+    border-bottom: solid 1px var(--color-brand);
+  }
+
+  &::placeholder {
+    font-size: 1rem;
+    color: var(--cool-grey);
+  }
+}
