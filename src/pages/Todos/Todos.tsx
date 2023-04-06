@@ -1,9 +1,4 @@
-import React, {
-  KeyboardEvent,
-  KeyboardEventHandler,
-  useEffect,
-  useState,
-} from "react";
+import React, { KeyboardEvent, useEffect, useState } from "react";
 import {
   Todo,
   useCreateTodoMutation,
@@ -39,12 +34,16 @@ export default function Todos() {
     if (event.key !== ACTION_KEY) return;
 
     const target = event.target as HTMLInputElement;
+
+    if (target.value.length < 3) return;
+
     const options = {
       variables: { input: { title: target.value } },
       refetchQueries: [LIST_TODO],
     };
-    console.log(options);
+
     target.value = "";
+
     await createTodoMutation(options).catch((err) => console.log(err));
   }
 

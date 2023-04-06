@@ -1,4 +1,3 @@
-import "./TodoList.scss";
 import React from "react";
 import { Todo } from "../../graphql/typesAndHooks.generated";
 import { TodoItem } from "../index";

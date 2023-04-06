@@ -22,6 +22,13 @@ body {
   height: 100%;
 }
 
+.scrollable {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 114px;
+  max-height: 33vh;
+}
+
 .box-radius {
   border-radius: 0.5rem;
 }
